@@ -1,30 +1,33 @@
-package calss01;
+package class01;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class BasicAnnotations {
-    @Test
-    public void cfirstTest(){
+    @Test(groups = "smoke")
+    public void cfirstTest() {
         System.out.println("This is my first testcase");
     }
+
     @Test
-    public void asecondTest(){
+    public void asecondTest() {
         System.out.println("This is my second testcase");
     }
- @Test
-    public void bthirdTest(){
+
+    @Test
+    public void bthirdTest() {
         System.out.println("This is my third testcase");
     }
 
     @BeforeMethod
-    public void beformethod(){
+    public void beformethod() {
         System.out.println("*****Precondition****");
     }
- @AfterMethod
-    public void aftermethod(){
-     System.out.println("^^^Postcondition^^^");
- }
+
+    @AfterMethod
+    public void aftermethod() {
+        System.out.println("^^^Postcondition^^^");
+    }
 
 }

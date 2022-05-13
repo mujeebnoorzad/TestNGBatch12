@@ -1,16 +1,16 @@
-package calss01;
+package class01;
 
 import org.testng.annotations.Test;
 
 public class DependsOn {
 
     @Test
-    public void login(){
+    public void login() {
         System.out.println("this is login test ");
     }
 
     @Test(dependsOnMethods = "login")
-    public void verificationOfDashboard(){
+    public void verificationOfDashboard() {
         System.out.println("this is dashboard");//skip that
 
     }
